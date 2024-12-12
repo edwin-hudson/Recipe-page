@@ -64,13 +64,44 @@ h1{
 }
 
 .desc{
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 1.1rem;
     color: hsl(24, 5%, 18%);
+
+}
+
+.pre-time{
+    background: hsl(330, 100%, 98%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
 }
 
 .preparation-wrapper{
     margin: 0 20px;
+}
+
+.preparation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+}
+
+.prep-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 25px;
+}
+
+span.head{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(32, 10%, 34%);
 }
 
 article{
