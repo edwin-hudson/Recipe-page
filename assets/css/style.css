@@ -61,12 +61,13 @@ h1{
     font-family: "Young Serif", serif;
     font-size: 2.7rem;
     font-weight: 500;
+    color: hsl(15, 4%, 18%);
 }
 
-.desc{
+.title-desc{
     margin: 20px 0;
     font-size: 1.1rem;
-    color: hsl(24, 5%, 18%);
+    color: hsl(30, 10%, 34%);
 
 }
 
@@ -74,7 +75,7 @@ h1{
     background: hsl(330, 100%, 98%);
     padding: 25px;
     border-radius: 15px;
-    margin: 20px 0;
+    margin: 20px 0 5px 0;
 }
 
 .preparation-wrapper{
@@ -94,8 +95,9 @@ h1{
 .prep-list{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 13px;
     padding: 0 25px;
+    color: hsl(0, 3%, 34%);
 }
 
 span.head{
@@ -117,4 +119,55 @@ section .header{
     font-size: 1.7rem;
     font-weight: 500;
     color: hsl(14, 45%, 36%);
+    padding: 5px 0 20px 0;
+}
+
+ul.down,
+ol.down {
+    padding: 0 0 35px 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    
+}
+
+ol li{
+    color: hsl(30, 10%, 34%);
+}
+
+::marker{
+}
+
+.nutrition-desc{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition-tab{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    list-style-type: none;
+    color: hsl(30, 10%, 34%);
+}
+
+span.main-val{
+    width: 40%;
+}
+
+.first-val{
+    display: flex;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 0 0 15px 30px;
+    gap: 55px;
+}
+
+.first-val:last-child{
+    border-bottom: none;
+}
+
+.nd-val{
+    font-size: 1rem;
+    font-weight: 900;
+    color: hsla(14, 45%, 36%, 0.911);
 }
