@@ -1,7 +1,61 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(30, 54%, 90%);
+    padding: 100px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    width: 800px;
+    border-radius: 20px;
+    padding: 30px;
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.wrapper .image-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrapper .image-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    
+}
+
+.preparation-wrapper{
+    background: rgb(119, 27, 27);
+    margin: 0 20px;
+}
+
+article{
+    background: red;
+    margin: 0 20px;
+}
