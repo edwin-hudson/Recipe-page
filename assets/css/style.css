@@ -51,11 +51,9 @@ body{
 }
 
 .preparation-wrapper{
-    background: rgb(119, 27, 27);
     margin: 0 20px;
 }
 
 article{
-    background: red;
     margin: 0 20px;
 }
