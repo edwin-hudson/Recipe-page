@@ -86,6 +86,7 @@ h1{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 60px;
     padding-bottom: 10px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -95,7 +96,7 @@ h1{
 .prep-list{
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: 15px;
     padding: 0 25px;
     color: hsl(0, 3%, 34%);
 }
