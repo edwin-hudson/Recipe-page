@@ -185,7 +185,7 @@ span.main-val{
 .nd-val{
     font-size: 1rem;
     font-weight: 900;
-    color: var(--Stone_800);
+    color: var(--Brown_800);
 }
 
 @media screen and (max-width: 768px) {
