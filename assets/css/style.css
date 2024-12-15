@@ -113,6 +113,10 @@ h1{
     color: hsl(0, 3%, 34%);
 }
 
+section ul li{
+    padding-left: 1rem;
+}
+
 span.head{
     font-size: 1rem;
     font-weight: 700;
@@ -144,11 +148,11 @@ ol.down {
 
 ol li{
     color: hsl(30, 10%, 34%);
+    padding-left: 1em;
 }
 
 ::marker{
     font-weight: 600;
-    word-spacing: 20px;
 }
 
 .nutrition-desc{
@@ -197,7 +201,7 @@ span.main-val{
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 460px) {
     body{
         padding: 0;
     }
@@ -238,8 +242,8 @@ span.main-val{
     }
     
     .pre-time{
-        padding: 25px;
-        margin: 20px 20px 0 20px;
+        padding: 0px;
+        margin: 20px 10px 0 10px;
     }
     
     .preparation-wrapper{
@@ -250,15 +254,32 @@ span.main-val{
         padding: 0 25px;
     }
 
-    .down{
-        margin: 20px 20px 0 25px;
-    }
-
     article{
-        margin: 0 30px 30px 30px;
+        padding: 0 10px;
     }
 
-    span.main-val{
-        width: 35%;
+    /* .down{
+        margin: 20px 20px 0 25px;
+    } */
+
+}
+
+@media screen and (max-width: 365px) {
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    h1{
+        font-size: 1.9rem;
+    }
+    .preparation{
+        font-size: 1.4rem;
+    }
+
+    .pre-time{
+        padding: 15px;
+        margin: 20px 10px 0 10px;
     }
 }
