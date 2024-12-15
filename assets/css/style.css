@@ -1,6 +1,8 @@
-
+/* Required Font  */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
+
+/* REquired color scheme*/
 :root{
     --White: hsl(0, 0%, 100%);
     --Stone_100: hsl(30, 54%, 90%);
@@ -41,20 +43,7 @@ body{
     
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-}
-
-.wrapper .image-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
+/* Image and header section CSS  */
 .wrapper .image-card img{
     width: 100%;
     height: auto;
@@ -79,12 +68,13 @@ h1{
 .title-desc{
     margin: 20px 0;
     font-size: 1.1rem;
-    color: hsl(30, 10%, 34%);
+    color: var(--Stone_600);
 
 }
 
+/* Preparation Time CSS */
 .pre-time{
-    background: hsl(330, 100%, 98%);
+    background: var(--Rose_50);
     padding: 25px;
     border-radius: 15px;
     margin: 20px 0 5px 0;
@@ -102,7 +92,7 @@ h1{
     padding-bottom: 10px;
     font-size: 1.5rem;
     font-weight: 600;
-    color: hsl(332, 51%, 32%);
+    color: var(--Rose_800);
 }
 
 .prep-list{
@@ -110,18 +100,22 @@ h1{
     flex-direction: column;
     gap: 15px;
     padding: 0 25px;
-    color: hsl(0, 3%, 34%);
+    color: var(--Stone_600);
 }
 
-section ul li{
+section ul li,
+div ul li{
     padding-left: 1rem;
 }
 
 span.head{
     font-size: 1rem;
     font-weight: 700;
-    color: hsl(32, 10%, 34%);
+    color: var(--Stone_600);
+
 }
+
+/* Ingredients section CSS  */
 
 article{
     margin: 0 20px;
@@ -135,30 +129,33 @@ section .header{
     font-family: "Young Serif", serif;
     font-size: 1.7rem;
     font-weight: 500;
-    color: hsl(14, 45%, 36%);
+    color: var(--Brown_800);
     padding: 5px 0 20px 0;
 }
 
 ul.down,
 ol.down {
     padding: 0 0 35px 20px;
-    border-bottom: 1px solid hsl(30, 18%, 87%);
+    border-bottom: 1px solid var(--Stone_150);
     
 }
 
 ol li{
-    color: hsl(30, 10%, 34%);
+    color: var(--Stone_600);
     padding-left: 1em;
 }
 
 ::marker{
-    font-weight: 600;
+    font-weight: 900;
+    color: var(--Brown_800);
 }
+
+/* Nutrition section CSS  */
 
 .nutrition-desc{
     margin-bottom: 20px;
     font-size: 1.1rem;
-    color: hsl(30, 10%, 34%);
+    color: var(--Stone_600);
 }
 
 .nutrition-tab{
@@ -167,7 +164,7 @@ ol li{
     width: 100%;
     gap: 15px;
     list-style-type: none;
-    color: hsl(30, 10%, 34%);
+    color: var(--Stone_600);
 }
 
 span.main-val{
@@ -176,7 +173,7 @@ span.main-val{
 
 .first-val{
     display: flex;
-    border-bottom: 1px solid hsl(30, 18%, 87%);
+    border-bottom: 1px solid var(--Stone_150);
     padding: 0 0 15px 30px;
     gap: 55px;
 }
@@ -188,7 +185,7 @@ span.main-val{
 .nd-val{
     font-size: 1rem;
     font-weight: 900;
-    color: hsla(14, 45%, 36%, 0.911);
+    color: var(--Stone_800);
 }
 
 @media screen and (max-width: 768px) {
@@ -242,8 +239,8 @@ span.main-val{
     }
     
     .pre-time{
-        padding: 0px;
-        margin: 20px 10px 0 10px;
+        padding: 10px;
+        margin: 20px;
     }
     
     .preparation-wrapper{
@@ -257,10 +254,6 @@ span.main-val{
     article{
         padding: 0 10px;
     }
-
-    /* .down{
-        margin: 20px 20px 0 25px;
-    } */
 
 }
 
