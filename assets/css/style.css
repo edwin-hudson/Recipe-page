@@ -1,4 +1,16 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone_100: hsl(30, 54%, 90%);
+    --Stone_150: hsl(30, 18%, 87%);
+    --Stone_600: hsl(30, 10%, 34%);
+    --Stone_900: hsl(24, 5%, 18%);
+    --Brown_800: hsl(14, 45%, 36%);
+    --Rose_800: hsl(332, 51%, 32%);
+    --Rose_50: hsl(330, 100%, 98%);
+}
 
 *{
     margin: 0;
@@ -12,7 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: hsl(30, 54%, 90%);
+    background: var(--Stone_100);
     padding: 100px;
 
 }
@@ -22,7 +34,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--White);
     width: 800px;
     border-radius: 20px;
     padding: 30px;
@@ -61,7 +73,7 @@ h1{
     font-family: "Young Serif", serif;
     font-size: 2.7rem;
     font-weight: 500;
-    color: hsl(15, 4%, 18%);
+    color: var(--Stone_900);
 }
 
 .title-desc{
@@ -135,6 +147,8 @@ ol li{
 }
 
 ::marker{
+    font-weight: 600;
+    word-spacing: 20px;
 }
 
 .nutrition-desc{
@@ -171,4 +185,80 @@ span.main-val{
     font-size: 1rem;
     font-weight: 900;
     color: hsla(14, 45%, 36%, 0.911);
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 430px) {
+    body{
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+        
+    }
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .wrapper .image-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .wrapper .image-card img{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    h1{
+        font-size: 2.3rem;
+        padding: 5px 20px 0 20px;
+    }
+
+    .title-desc{
+        margin: 20px;
+        font-size: 1.0rem;
+    }
+    
+    .pre-time{
+        padding: 25px;
+        margin: 20px 20px 0 20px;
+    }
+    
+    .preparation-wrapper{
+        margin: 0 20px;
+    }
+
+    .prep-list{
+        padding: 0 25px;
+    }
+
+    .down{
+        margin: 20px 20px 0 25px;
+    }
+
+    article{
+        margin: 0 30px 30px 30px;
+    }
+
+    span.main-val{
+        width: 35%;
+    }
 }
